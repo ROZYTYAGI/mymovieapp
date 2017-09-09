@@ -1,0 +1,17 @@
+
+<div class="container-fluid">
+<div class="row">
+ <div class="col-md-6 col-lg-3" *ngFor ="let data of movieList">
+                       <div class="card">
+                       <a>
+                           <img class="card-img-top img-fluid" src="https://image.tmdb.org/t/p/w500{{data.poster_path}}">
+                           <div class="card-block">
+                               <p class="card-title">Movie: {{data.original_title}}<br></p>
+                               <p class="card-text">Release Date: {{data.release_date}}<br>
+                                <button type="button" (click)="add(data)">Add</button></p>
+                           </div>
+                           </a>
+                       </div>
+                   </div>
+                   </div>
+                   </div>

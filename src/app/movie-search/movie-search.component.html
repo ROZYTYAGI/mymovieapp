@@ -1,0 +1,14 @@
+
+ <div class="container-fluid">
+ <nav class="navbar fixed-top navbar-dark bg-inverse">
+  <form class="form-inline">
+
+  <button class="btn btn-outline-success my-2 my-sm-0" type="submit" (click)="displayMovie()" [routerLink]="['/fav']">Favourites</button>
+    <input class="form-control mr-sm-2" type="text" placeholder="Search" name="movie" [(ngModel)]="movie">
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit" (click)="searchMovie(movie)" [routerLink]="['/search']">Search</button>
+  </form>
+</nav>
+</div>
+
+
+
