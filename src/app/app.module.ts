@@ -10,6 +10,7 @@ import { MoviesListComponent } from './movies-list/movies-list.component';
 import { MoviesFavouritesComponent } from './movies-favourites/movies-favourites.component';
 import {MovieRoutingModule} from './movie.routing.module';
 import { MoviesDeleteComponent } from './movies-delete/movies-delete.component';
+import { MovieRegistrationComponent } from './movie-registration/movie-registration.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { MoviesDeleteComponent } from './movies-delete/movies-delete.component';
     MoviesComponent,
     MoviesListComponent,
     MoviesFavouritesComponent,
-    MoviesDeleteComponent
+    MoviesDeleteComponent,
+    MovieRegistrationComponent
   ],
   imports: [
     BrowserModule,

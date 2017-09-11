@@ -34,8 +34,8 @@ displayMovie(){
   .map(res=>res.json());
 }
 
-deleteMovie(){
-  return this.http.delete('http://localhost:3000/user')
+deleteMovie(id:any){
+  return this.http.delete('http://localhost:3000/user/'+id._id)
   .map(res=>res.json());
 }
 }

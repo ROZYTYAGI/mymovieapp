@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {MovieSearchService} from '../movie-search.service';
 
 @Component({
   selector: 'app-movies-delete',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MoviesDeleteComponent implements OnInit {
 
-  constructor() { }
+  constructor(private movieSearchService: MovieSearchService) { }
 
   ngOnInit() {
   }
+  
 
 }

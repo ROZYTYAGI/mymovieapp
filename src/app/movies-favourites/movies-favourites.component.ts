@@ -8,7 +8,7 @@ import {MovieSearchService} from '../movie-search.service';
 })
 export class MoviesFavouritesComponent implements OnInit {
 favouritesAdd: any={};
-
+deletedData: any=[];
 
   constructor(private movieSearchService:MovieSearchService) { }
 
@@ -17,10 +17,15 @@ favouritesAdd: any={};
   }
   displayMovie(){
 		this.movieSearchService.displayMovie().subscribe((display)=>{
-      console.log(this.favouritesAdd)
+      
       this.favouritesAdd=display;
+      console.log(this.favouritesAdd)
       
 		})
 	}
+  deleteMovie(id:any){
+    this.movieSearchService.deleteMovie(id).subscribe(res=>{this.deletedData=res})
+      console.log(this.deletedData)
+  }
 
 }

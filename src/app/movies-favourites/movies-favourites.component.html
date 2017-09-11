@@ -1,7 +1,7 @@
 
 <div class="container-fluid">
 <div class="row">
-<app-movie-search></app-movie-search>
+<app-movie-search [routerLink]="['/search']"></app-movie-search>
  <div class="col-md-6 col-lg-3" *ngFor ="let data of favouritesAdd">
                        <div class="card">
                        <a>
@@ -9,7 +9,7 @@
                            <div class="card-block">
                                <p class="card-title">Movie: {{data.original_title}}<br></p>
                                <p class="card-text">Release Date: {{data.release_date}}<br>
-                                <button type="button" [routerLink]="['/del']">Delete</button></p>
+                                <button type="button" (click)="deleteMovie(data)" [routerLink]="['/del']">Delete</button></p>
                            </div>
                            </a>
                        </div>
